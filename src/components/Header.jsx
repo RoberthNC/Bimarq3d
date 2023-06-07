@@ -30,13 +30,12 @@ const Header = () => {
                 <img className="absolute" src={ Logo } alt="Logo" />
                 <span className="block text-xl text-[#FF6600]">
                     BIMARQ3D
-                </span>
-                Architecture Studio
+                </span>Architecture Studio
             </p>
             <button onClick={ hiddenNavbar } className="md:hidden">
                 <img src={ Menu } alt="Menú bars" />
             </button>
-            <div className={`flex flex-col items-center gap-3 md:visible ${ visibleMenu? "hidden" : "" } md:flex-row md:gap-4`}>
+            <div className={`flex flex-col items-center gap-2 md:visible ${ visibleMenu? "hidden" : "" } md:flex-row md:gap-5`}>
                 <HashLink smooth to="/#estudios" className="text-lg text-white hover:text-[#FF6600] ">Estudios</HashLink>
                 <HashLink smooth to="/#quienesomos" className="text-lg text-white hover:text-[#FF6600] ">Quiénes Somos</HashLink>
                 <HashLink smooth to="/#proyectos" className="text-lg text-white hover:text-[#FF6600] ">Proyectos</HashLink>
