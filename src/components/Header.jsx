@@ -26,11 +26,8 @@ const Header = () => {
 
     return (
         <div className="flex flex-col items-center gap-3 py-6 px-9 bg-[#1E1A1A] md:flex-row justify-between">
-            <p className="text-xl text-white text-center font-bold relative">
-                <img className="absolute" src={ Logo } alt="Logo" />
-                <span className="block text-xl text-[#FF6600]">
-                    BIMARQ3D
-                </span>Architecture Studio
+            <p className="text-xl text-white text-center font-bold">
+                <img className="lg:w-48 scale-105 lg:scale-125" src={ Logo } alt="Logo" />
             </p>
             <button onClick={ hiddenNavbar } className="md:hidden">
                 <img src={ Menu } alt="Menú bars" />

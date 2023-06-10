@@ -5,7 +5,7 @@ const Contacto = () => {
             <h2 className="text-center md:text-left text-xl font-bold text-[#FF6600] mb-5 md:mb-10">Datos De Contacto</h2>
             <p className="text-lg text-white">Teléfono: +51 995 990 902</p>
             <p className="text-lg text-white">Correo: xxxxx@gmail.com</p>
-            <p className="text-lg text-white">Dirección: Calle xxxxx, xxxxx, Trujillo - Perú</p>
+            <p className="text-lg text-white">Dirección: Calle xxxxx, xxxxx, San Borja - Lima</p>
         </div>
         <form className="flex flex-col gap-4">
             <div className="flex flex-col md:flex-row gap-4">
