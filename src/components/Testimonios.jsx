@@ -10,12 +10,13 @@ const Testimonios = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-3">
             {
                 testimonios.map(({descripcion,autor,img},idx)=>(
-                    <Testimonio
-                        key={idx}
-                        descripcion={descripcion}
-                        autor={autor}
-                        img={img}
-                    />
+                    <div key={idx}>
+                        <Testimonio
+                            descripcion={descripcion}
+                            autor={autor}
+                            img={img}
+                        />
+                    </div>
                 ))
             }
         </div>
