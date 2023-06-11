@@ -4,7 +4,7 @@ import Youtube from "../assets/icons/youtube.svg"
 
 const Contacto = () => {
   return (
-    <div id="contactenos" className="flex flex-col md:flex-row md:justify-around items-center gap-8 py-8 px-10 bg-[#1E1A1A] md:py-10 md:h-96">
+    <div id="contactenos" className="flex flex-col md:flex-row md:justify-around items-center gap-8 py-8 px-10 bg-[#1E1A1A] md:py-10 lg:h-96">
         <div className="flex flex-col gap-3">
             <h2 className="text-center md:text-left text-xl font-bold text-[#FF6600] mb-5 md:mb-10">Datos De Contacto</h2>
             <p className="text-lg text-white">Teléfono: +51 995 990 902</p>
