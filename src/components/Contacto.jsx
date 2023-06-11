@@ -12,13 +12,13 @@ const Contacto = () => {
             <p className="text-lg text-white">Dirección: Calle xxxxx, xxxxx, San Borja - Lima</p>
             <div className="flex flex-row gap-2 md:gap-3">
               <a href="https://www.facebook.com/profile.php?id=100086854065763" target="_blank">
-                <img src={Facebook} alt="Icono de Facebook" />
+                <img src={Facebook} alt="Icono de Facebook" className="h-auto w-auto" />
               </a>
               <a href="https://www.instagram.com/emersonjesusmartin" target="_blank">
-                <img src={Instagram} alt="Icono de Instagram" />
+                <img src={Instagram} alt="Icono de Instagram" className="h-auto w-auto" />
               </a>
               <a href="https://www.youtube.com/@emersonjesusmartinramirezm6323" target="_blank">
-                <img src={Youtube} alt="Icono de Youtube" />
+                <img src={Youtube} alt="Icono de Youtube" className="h-auto w-auto" />
               </a>
             </div>
         </div>
