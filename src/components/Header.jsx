@@ -33,7 +33,6 @@ const Header = () => {
                 <img src={ Menu } alt="Menú bars" />
             </button>
             <div className={`flex flex-col items-center gap-2 md:visible ${ visibleMenu? "hidden" : "" } md:flex-row md:gap-5`}>
-                <HashLink smooth to="/#estudios" className="text-lg text-white hover:text-[#FF6600] ">Estudios</HashLink>
                 <HashLink smooth to="/#quienesomos" className="text-lg text-white hover:text-[#FF6600] ">Quiénes Somos</HashLink>
                 <HashLink smooth to="/#proyectos" className="text-lg text-white hover:text-[#FF6600] ">Proyectos</HashLink>
                 <HashLink smooth to="/#servicios" className="text-lg text-white hover:text-[#FF6600] ">Servicios</HashLink>
