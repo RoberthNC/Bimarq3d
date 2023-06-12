@@ -10,7 +10,7 @@ const Contacto = () => {
         <div className="flex flex-col gap-3">
             <h2 className="text-center md:text-left text-xl font-bold text-[#FF6600] mb-5 md:mb-10">Datos De Contacto</h2>
             <p className="text-lg text-white">Teléfono: +51 995 990 902</p>
-            <p className="text-lg text-white">Correo: xxxxx@gmail.com</p>
+            <p className="text-lg text-white">Correo: informes@bimarq3d.com</p>
             <p className="text-lg text-white">Dirección Lima: Av. Alameda del Corregidor, 2788 3er piso - La Molina</p>
             <p className="text-lg text-white">Dirección Trujillo: Calle José Enrique Rodo 682 2do piso, Urb. Las Quintanas - Trujillo</p>
             <div className="flex flex-row gap-2 md:gap-3">
