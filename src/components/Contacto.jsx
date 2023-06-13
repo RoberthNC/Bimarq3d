@@ -23,10 +23,10 @@ const Contacto = () => {
               <a href="https://www.youtube.com/@emersonjesusmartinramirezm6323" target="_blank">
                 <img src={Youtube} alt="Icono de Youtube" className="h-auto w-auto" />
               </a>
-              <a href="" target="_blank">
+              <a href="https://www.tiktok.com/@www.bimarq3d.com" target="_blank">
                 <img src={Tiktok} alt="Icono de Tiktok" className="h-auto w-auto" />
               </a>
-              <a href="" target="_blank">
+              <a href="https://twitter.com/bimarq3d" target="_blank">
                 <img src={Twitter} alt="Icono de Twitter" className="h-auto w-auto" />
               </a>
             </div>
