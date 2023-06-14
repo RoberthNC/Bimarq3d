@@ -18,9 +18,10 @@ const Contacto = () => {
   const [ok, setOk] = useState(false)
 
   const handleSubmit = async(e) => {
-    e.preventDefault();
+    e.preventDefault()
     
     if([nombre, correo, mensaje].includes("")){
+      console.log("Todos los campos son requeridos")
       setError(true)
 
       setTimeout(()=>{
@@ -32,6 +33,7 @@ const Contacto = () => {
 
     //TODO: Crear la configuración para el envío de emails
 
+    console.log("Se envió el correo")
     setOk(true)
 
     setTimeout(() => {
@@ -71,8 +73,6 @@ const Contacto = () => {
             </div>
         </div>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-md:w-full">
-            { error && <Error /> }
-            { ok && <Ok /> }
             <div className="flex flex-col md:flex-row gap-4">
                 <input className="bg-[#D9D9D9] text-black p-3 rounded-md md:w-60" type="text" placeholder="Ingrese su nombre aquí" value={nombre} onChange={(e)=>setNombre(e.target.value)} />
                 <input className="bg-[#D9D9D9] text-black p-3 rounded-md md:w-60" type="email" placeholder="Ingrese su correo aquí" value={correo} onChange={(e)=>setCorreo(e.target.value)} />
