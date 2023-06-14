@@ -78,7 +78,7 @@ const Contacto = () => {
                 <input className="bg-[#D9D9D9] text-black p-3 rounded-md md:w-60" type="email" placeholder="Ingrese su correo aquí" value={correo} onChange={(e)=>setCorreo(e.target.value)} />
             </div>
             <textarea className="resize-none bg-[#D9D9D9] h-28 text-black p-3 rounded-md md:mb-3" placeholder="Ingrese su mensaje aquí" value={mensaje} onChange={(e)=>setMensaje(e.target.value)}></textarea>
-            <input className="text-white bg-[#FF6600] py-3 rounded-md w-40 mx-auto hover:scale-105 transition duration-200 transition-delay-100" type="submit" value="Enviar" />
+            <input className="text-white bg-[#FF6600] py-3 rounded-md w-40 mx-auto hover:scale-x-125 transition duration-200 transition-delay-100" type="submit" value="Enviar" />
         </form>
     </div>
   )
