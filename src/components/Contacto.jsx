@@ -55,19 +55,19 @@ const Contacto = () => {
             <p className="text-lg text-white">Dirección Lima: Av. Alameda del Corregidor, 2788 3er piso - La Molina</p>
             <p className="text-lg text-white">Dirección Trujillo: Calle José Enrique Rodo 682 2do piso, Urb. Las Quintanas - Trujillo</p>
             <div className="flex flex-row gap-2 md:gap-3">
-              <a href="https://www.facebook.com/profile.php?id=100086806937152" target="_blank">
+              <a className="transition duration-150 hover:scale-105 transition-delay-100" href="https://www.facebook.com/profile.php?id=100086806937152" target="_blank">
                 <img src={Facebook} alt="Icono de Facebook" className="h-auto w-auto" />
               </a>
-              <a href="https://www.instagram.com/emersonjesusmartin" target="_blank">
+              <a className="transition duration-150 hover:scale-105 transition-delay-100" href="https://www.instagram.com/emersonjesusmartin" target="_blank">
                 <img src={Instagram} alt="Icono de Instagram" className="h-auto w-auto" />
               </a>
-              <a href="https://www.youtube.com/@emersonjesusmartinramirezm6323" target="_blank">
+              <a className="transition duration-150 hover:scale-105 transition-delay-100" href="https://www.youtube.com/@emersonjesusmartinramirezm6323" target="_blank">
                 <img src={Youtube} alt="Icono de Youtube" className="h-auto w-auto" />
               </a>
-              <a href="https://www.tiktok.com/@www.bimarq3d.com" target="_blank">
+              <a className="transition duration-150 hover:scale-105 transition-delay-100" href="https://www.tiktok.com/@www.bimarq3d.com" target="_blank">
                 <img src={Tiktok} alt="Icono de Tiktok" className="h-auto w-auto" />
               </a>
-              <a href="https://twitter.com/bimarq3d" target="_blank">
+              <a className="transition duration-150 hover:scale-105 transition-delay-100" href="https://twitter.com/bimarq3d" target="_blank">
                 <img src={Twitter} alt="Icono de Twitter" className="h-auto w-auto" />
               </a>
             </div>
