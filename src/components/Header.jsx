@@ -25,7 +25,7 @@ const Header = () => {
     },[window])
 
     return (
-        <div className="flex flex-col items-center gap-3 py-6 px-9 bg-[#1E1E1E] opacity-75 md:flex-row justify-between">
+        <div className="flex flex-col items-center gap-3 py-6 px-9 bg-[#1E1E1E] opacity-70 md:flex-row justify-between">
             <p className="text-xl text-white text-center font-bold">
                 <img className="lg:w-48 scale-105 lg:scale-125 h-auto w-auto" src={ Logo } alt="Logo" />
             </p>
