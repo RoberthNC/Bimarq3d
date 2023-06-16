@@ -15,7 +15,6 @@ const Contacto = () => {
   const [correo, setCorreo] = useState("")
   const [mensaje, setMensaje] = useState("")
   const [error, setError] = useState(false)
-  const [ok, setOk] = useState(false)
 
   const handleSubmit = async(e) => {
     e.preventDefault()

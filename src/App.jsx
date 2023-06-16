@@ -3,11 +3,14 @@ import Servicios from "./components/Servicios"
 import Testimonios from "./components/Testimonios"
 import Contacto from "./components/Contacto"
 
+import Ok from "./components/Ok"
+
 import { AplicacionProvider } from "./context/AplicacionProvider"
 
 const App = () => {
   return (
     <AplicacionProvider>
+      <Ok />
       <QuienesSomos />
       <Servicios />
       <Testimonios />
