@@ -7,6 +7,7 @@ import Instagram from "../assets/icons/instagram.svg"
 import Tiktok from "../assets/icons/tiktok.svg"
 import Twitter from "../assets/icons/twitter.svg"
 import Youtube from "../assets/icons/youtube.svg"
+import useAplicacion from "../hooks/useAplicacion"
 
 const Contacto = () => {
 
@@ -14,6 +15,8 @@ const Contacto = () => {
   const [correo, setCorreo] = useState("")
   const [mensaje, setMensaje] = useState("")
   const [error, setError] = useState(false)
+
+  const { setMostrarModal } = useAplicacion()
 
   const handleSubmit = async(e) => {
     e.preventDefault()
@@ -30,7 +33,11 @@ const Contacto = () => {
     }
 
     //TODO: Crear la configuración para el envío de emails
-    console.log("Se envió el correo")
+
+    setMostrarModal(true)
+    setTimeout(()=>{
+      setMostrarModal(false)
+    },3000)
 
     setNombre("")
     setCorreo("")

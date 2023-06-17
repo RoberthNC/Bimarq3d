@@ -13,10 +13,11 @@ const AppBimarq3d = () => {
 
     return (
         <>
-        <QuienesSomos />
-        <Servicios />
-        <Testimonios />
-        <Contacto />
+            { mostrarModal && <Ok /> }
+            <QuienesSomos />
+            <Servicios />
+            <Testimonios />
+            <Contacto />
         </>
     )
 }
