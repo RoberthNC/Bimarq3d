@@ -1,4 +1,5 @@
 import QuienesSomos from "./QuienesSomos"
+import Proyectos from "./Proyectos"
 import Servicios from "./Servicios"
 import Testimonios from "./Testimonios"
 import Contacto from "./Contacto"
@@ -15,6 +16,7 @@ const AppBimarq3d = () => {
         <>
             { mostrarModal && <Ok /> }
             <QuienesSomos />
+            <Proyectos />
             <Servicios />
             <Testimonios />
             <Contacto />

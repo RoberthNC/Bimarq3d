@@ -37,7 +37,7 @@ const Contacto = () => {
     setMostrarModal(true)
     setTimeout(()=>{
       setMostrarModal(false)
-    },5000)
+    },3500)
 
     setNombre("")
     setCorreo("")
