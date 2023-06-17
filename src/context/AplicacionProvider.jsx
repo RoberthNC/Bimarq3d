@@ -4,13 +4,13 @@ const AplicacionContext = createContext()
 
 const AplicacionProvider = ({children}) => {
 
-    const [mostrar, setMostrar] = useState(false)
+    const [mostrarModal, setMostrarModal] = useState(false)
 
     return (
         <AplicacionContext.Provider
             value={{ 
-                mostrar, 
-                setMostrar 
+                mostrarModal, 
+                setMostrarModal 
             }}
         >
             {children}

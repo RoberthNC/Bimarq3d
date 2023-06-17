@@ -1,22 +1,10 @@
-import QuienesSomos  from "./components/QuienesSomos"
-import Servicios from "./components/Servicios"
-import Testimonios from "./components/Testimonios"
-import Contacto from "./components/Contacto"
-
-import Ok from "./components/Ok"
-
+import AppBimarq3d from "./components/AppBimarq3d"
 import { AplicacionProvider } from "./context/AplicacionProvider"
 
 const App = () => {
-
-
   return (
     <AplicacionProvider>
-      {false && <Ok />}
-      <QuienesSomos />
-      <Servicios />
-      <Testimonios />
-      <Contacto />
+      <AppBimarq3d />
     </AplicacionProvider>
   )
 }
