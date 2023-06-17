@@ -1,5 +1,4 @@
-import { useState, useContext } from "react"
-import { AplicacionContext } from "../context/AplicacionProvider"
+import { useState } from "react"
 
 import Error from "./Error"
 
@@ -10,8 +9,6 @@ import Twitter from "../assets/icons/twitter.svg"
 import Youtube from "../assets/icons/youtube.svg"
 
 const Contacto = () => {
-
-  const { setMostrar } = useAplicacion()
 
   const [nombre, setNombre] = useState("")
   const [correo, setCorreo] = useState("")
@@ -33,18 +30,12 @@ const Contacto = () => {
     }
 
     //TODO: Crear la configuración para el envío de emails
-    setMostrar(true)
-
     console.log("Se envió el correo")
 
     setNombre("")
     setCorreo("")
     setMensaje("")
     setError(false)
-
-    setTimeout(()=>{
-      setError(false)
-    },3000)
   }
 
   return (
