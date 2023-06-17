@@ -1,3 +1,6 @@
+import { useContext } from "react"
+import { AplicacionContext } from "./context/AplicacionProvider"
+
 import QuienesSomos  from "./components/QuienesSomos"
 import Servicios from "./components/Servicios"
 import Testimonios from "./components/Testimonios"
@@ -8,9 +11,12 @@ import Ok from "./components/Ok"
 import { AplicacionProvider } from "./context/AplicacionProvider"
 
 const App = () => {
+
+  const { mostrar } = useContext(AplicacionContext)
+
   return (
     <AplicacionProvider>
-      <Ok />
+      {false && <Ok />}
       <QuienesSomos />
       <Servicios />
       <Testimonios />
