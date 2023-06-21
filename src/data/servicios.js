@@ -1,5 +1,5 @@
 import Comercial from "../assets/img/comercial.jpg"
-import Habitacional from "../assets/img/Habitacional.jpg"
+import Habitacional from "../assets/img/habitacional.jpg"
 
 const servicios = [
     {
