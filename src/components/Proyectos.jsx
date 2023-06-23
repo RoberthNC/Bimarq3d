@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/free-mode"
 import SwiperCore, { Navigation, Pagination } from "swiper/core"
+import { Autoplay } from "swiper"
 
 import Proyecto from "./Proyecto"
 
@@ -24,29 +25,10 @@ const Proyectos = () => {
         <div id="proyectos" style={styles} className="h-screen md:h-[80vh]">
             <div className="flex justify-center gap-5 bg-[#1E1E1E] opacity-70 px-9 py-6 w-full h-full md:h-[80vh] md:py-9 md:px-20">
                 <Swiper
+                    modules={[Autoplay]}
                     navigation
                     pagination={{ clickable: true }}
-                    breakpoints={{
-                        0:{
-                            slidesPerView: 1
-                        },
-                        480:{
-                            slidesPerView: 2,
-                            spaceBetween:30
-                        },
-                        768:{
-                            slidesPerView: 3,
-                            spaceBetween:30
-                        },
-                        1024:{
-                            slidesPerView: 4,
-                            spaceBetween:30
-                        },
-                        1280:{
-                            slidesPerView:5,
-                            spaceBetween:30
-                        }
-                    }}
+                    autoplay={{delay:5000}}
                 >
                     <SwiperSlide>
                         <Proyecto
