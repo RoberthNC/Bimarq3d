@@ -6,6 +6,8 @@ import SwiperCore, { Navigation, Pagination } from "swiper/core"
 import Proyecto from "./Proyecto"
 
 import ProyectosImage from "../assets/img/proyectos.jpg"
+import Impresion3D from "../assets/img/impresion3d.jpg"
+import MuseoSican from "../assets/img/museosican.png"
 
 SwiperCore.use([Navigation, Pagination])
 
@@ -47,10 +49,18 @@ const Proyectos = () => {
                     }}
                 >
                     <SwiperSlide>
-                        <Proyecto />
+                        <Proyecto
+                            titulo="Impresión 3D"
+                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                            img={Impresion3D}
+                        />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Proyecto />
+                        <Proyecto
+                            titulo="Museo Nacional de Sicán"
+                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                            img={MuseoSican}
+                        />
                     </SwiperSlide>
                     <SwiperSlide>
                         <Proyecto />

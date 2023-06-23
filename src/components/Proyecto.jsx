@@ -1,7 +1,16 @@
-const Proyecto = () => {
+const Proyecto = ({titulo, descripcion, img}) => {
+
+  const styles = {
+    backgroundImage: `url(${img})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+  }
+
   return (
-    <div className="bg-black text-white h-full w-full md:w-80% rounded-md">
-        Proyecto
+    <div style={styles} className="bg-black text-white h-full w-full md:w-80% rounded-md">
+        <p>{ titulo }</p>
+        <p>{ descripcion }</p>
     </div>
   )
 }
