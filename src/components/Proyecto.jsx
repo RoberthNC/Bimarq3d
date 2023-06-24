@@ -8,9 +8,11 @@ const Proyecto = ({titulo, descripcion, img}) => {
   }
 
   return (
-    <div style={styles} className="bg-black text-white h-full w-full md:w-80% rounded-xl opacity-100 flex flex-col gap-5 justify-end p-10">
-        <p className="text-3xl font-bold ">{ titulo }</p>
-        <p className="text-lg">{ descripcion }</p>
+    <div style={styles} className="h-full w-full md:w-80% rounded-xl opacity-100">
+        <div className="bg-[#1E1E1E] opacity-70 h-full w-full rounded-xl flex flex-col justify-end gap-5 p-5">
+          <p className="text-3xl font-bold text-white">{ titulo }</p>
+          <p className="text-lg text-white">{ descripcion }</p>
+        </div>
     </div>
   )
 }

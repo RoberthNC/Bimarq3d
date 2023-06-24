@@ -26,7 +26,7 @@ const Proyectos = () => {
 
     return (
         <div id="proyectos" style={styles} className="h-screen md:h-[80vh]">
-            <div className="flex justify-center gap-5 bg-[#1E1E1E] opacity-70 px-9 py-6 w-full h-full md:h-[80vh] md:py-9 md:px-20">
+            <div className="flex justify-center gap-5 bg-[#1E1E1E] px-9 py-6 w-full h-full md:h-[80vh] md:py-9 md:px-20">
                 <Swiper
                     modules={[Autoplay]}
                     navigation
