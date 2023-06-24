@@ -8,9 +8,9 @@ const Proyecto = ({titulo, descripcion, img}) => {
   }
 
   return (
-    <div style={styles} className="bg-black text-white h-full w-full md:w-80% rounded-md">
-        <p>{ titulo }</p>
-        <p>{ descripcion }</p>
+    <div style={styles} className="bg-black text-white h-full w-full md:w-80% rounded-xl opacity-100 flex flex-col gap-5 justify-end p-10">
+        <p className="text-3xl font-bold ">{ titulo }</p>
+        <p className="text-lg">{ descripcion }</p>
     </div>
   )
 }

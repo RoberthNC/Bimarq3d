@@ -9,6 +9,9 @@ import Proyecto from "./Proyecto"
 import ProyectosImage from "../assets/img/proyectos.jpg"
 import Impresion3D from "../assets/img/impresion3d.jpg"
 import MuseoSican from "../assets/img/museosican.png"
+import Banister from "../assets/img/banister.png"
+import CasaDeCampo from "../assets/img/casacampo.png"
+import Huanchaco from "../assets/img/huanchaco.jpg"
 
 SwiperCore.use([Navigation, Pagination])
 
@@ -29,6 +32,7 @@ const Proyectos = () => {
                     navigation
                     pagination={{ clickable: true }}
                     autoplay={{delay:5000}}
+                    loop={true}
                 >
                     <SwiperSlide>
                         <Proyecto
@@ -45,24 +49,26 @@ const Proyectos = () => {
                         />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Proyecto />
+                        <Proyecto 
+                            titulo="Banister"
+                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                            img={Banister} 
+                        />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Proyecto />
+                        <Proyecto
+                            titulo="Casa de Campo"
+                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                            img={CasaDeCampo} 
+                        />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Proyecto />
+                        <Proyecto
+                            titulo="Huanchaco"
+                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                            img={Huanchaco} 
+                        />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <Proyecto />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Proyecto />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Proyecto />
-                    </SwiperSlide>
-                    
                 </Swiper>
             </div>
         </div>
