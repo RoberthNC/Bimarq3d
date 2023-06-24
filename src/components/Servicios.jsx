@@ -9,7 +9,7 @@ const Servicios = () => {
       <div className="flex flex-col items-center gap-6 md:gap-3 py-6 px-9 md:flex-row md:justify-center md:gap-x-14">
           {
             servicios.map(({titulo, descripcion, img}, idx)=>(
-              <div key={idx} className="static">
+              <div key={idx}>
                 <Servicio
                   titulo={titulo} 
                   descripcion={descripcion} 
