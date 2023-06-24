@@ -6,7 +6,6 @@ import SwiperCore, { Navigation, Pagination } from "swiper/core"
 
 import Proyecto from "./Proyecto"
 
-import ProyectosImage from "../assets/img/proyectos.jpg"
 import Impresion3D from "../assets/img/impresion3d.jpg"
 import MuseoSican from "../assets/img/museosican.png"
 import Banister from "../assets/img/banister.png"
@@ -16,16 +15,9 @@ import Huanchaco from "../assets/img/huanchaco.jpg"
 SwiperCore.use([Navigation, Pagination])
 
 const Proyectos = () => {
-
-    const styles = {
-        backgroundImage: `url(${ProyectosImage})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-      }
-
     return (
-        <div id="proyectos" style={styles} className="h-screen md:h-[80vh]">
+        <div id="proyectos" className="h-screen md:h-[80vh]">
+            <p className="text-xl text-center text-[#FF6600] shadow-xl font-bold bg-[#1E1A1A] pt-6">Proyectos BIMARQ3D</p>
             <div className="flex justify-center gap-5 bg-[#1E1A1A] px-9 py-6 w-full h-full md:h-[80vh] md:py-9 md:px-20">
                 <Swiper
                     modules={[Autoplay]}
