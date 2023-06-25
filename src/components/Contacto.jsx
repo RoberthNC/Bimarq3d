@@ -11,9 +11,6 @@ import Youtube from "../assets/icons/youtube.svg"
 import useAplicacion from "../hooks/useAplicacion"
 
 const Contacto = () => {
-
-  // const form = useRef()
-
   const [nombre, setNombre] = useState("")
   const [correo, setCorreo] = useState("")
   const [mensaje, setMensaje] = useState("")
