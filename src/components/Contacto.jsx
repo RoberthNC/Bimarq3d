@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
 
 import Error from "./Error"
 
@@ -10,6 +11,8 @@ import Youtube from "../assets/icons/youtube.svg"
 import useAplicacion from "../hooks/useAplicacion"
 
 const Contacto = () => {
+
+  // const form = useRef()
 
   const [nombre, setNombre] = useState("")
   const [correo, setCorreo] = useState("")
@@ -33,6 +36,16 @@ const Contacto = () => {
     }
 
     //TODO: Crear la configuración para el envío de emails
+    emailjs.send("service_zxkjblp","template_8ynrc9h",{
+      from_name: nombre,
+      message: mensaje,
+      user_email: correo,
+    },"dJjWkU7ywJcNe-ygn")
+      .then((result) => {
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
 
     setMostrarModal(true)
     setTimeout(()=>{
@@ -74,10 +87,10 @@ const Contacto = () => {
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-md:w-full">
             { error && <Error /> }
             <div className="flex flex-col md:flex-row gap-4">
-                <input className="bg-[#D9D9D9] text-black p-3 rounded-md md:w-60" type="text" placeholder="Ingrese su nombre aquí" value={nombre} onChange={(e)=>setNombre(e.target.value)} />
-                <input className="bg-[#D9D9D9] text-black p-3 rounded-md md:w-60" type="email" placeholder="Ingrese su correo aquí" value={correo} onChange={(e)=>setCorreo(e.target.value)} />
+                <input className="bg-[#D9D9D9] text-black p-3 rounded-md md:w-60" type="text" placeholder="Ingrese su nombre aquí" name="from_name" value={nombre} onChange={(e)=>setNombre(e.target.value)} />
+                <input className="bg-[#D9D9D9] text-black p-3 rounded-md md:w-60" type="email" placeholder="Ingrese su correo aquí" name="user_email" value={correo} onChange={(e)=>setCorreo(e.target.value)} />
             </div>
-            <textarea className="resize-none bg-[#D9D9D9] h-28 text-black p-3 rounded-md md:mb-3" placeholder="Ingrese su mensaje aquí" value={mensaje} onChange={(e)=>setMensaje(e.target.value)}></textarea>
+            <textarea className="resize-none bg-[#D9D9D9] h-28 text-black p-3 rounded-md md:mb-3" placeholder="Ingrese su mensaje aquí" name="message" value={mensaje} onChange={(e)=>setMensaje(e.target.value)}></textarea>
             <input className="text-white bg-[#FF6600] py-3 rounded-md w-40 mx-auto hover:scale-105 transition duration-200 transition-delay-100" type="submit" value="Enviar" />
         </form>
     </div>
