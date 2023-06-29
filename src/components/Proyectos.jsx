@@ -5,7 +5,6 @@ import "swiper/css"
 import "swiper/css/free-mode"
 import SwiperCore, { Navigation, Pagination } from "swiper/core"
 
-import Proyecto from "./Proyecto"
 import Spinner from "./Spinner"
 
 import Impresion3D from "../assets/img/impresion3d.jpg"
