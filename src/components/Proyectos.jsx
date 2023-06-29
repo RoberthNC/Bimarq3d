@@ -1,10 +1,12 @@
 import { Autoplay } from "swiper"
+import React, { lazy, Suspense } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/free-mode"
 import SwiperCore, { Navigation, Pagination } from "swiper/core"
 
 import Proyecto from "./Proyecto"
+import Spinner from "./Spinner"
 
 import Impresion3D from "../assets/img/impresion3d.jpg"
 import MuseoSican from "../assets/img/museosican.png"
@@ -13,6 +15,8 @@ import CasaDeCampo from "../assets/img/casacampo.png"
 import Huanchaco from "../assets/img/huanchaco.jpg"
 
 SwiperCore.use([Navigation, Pagination])
+
+const LazyProyecto = lazy(()=>import("./Proyecto"))
 
 const Proyectos = () => {
     return (
@@ -27,39 +31,49 @@ const Proyectos = () => {
                     loop={true}
                 >
                     <SwiperSlide>
-                        <Proyecto
-                            titulo="Impresión 3D"
-                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
-                            img={Impresion3D}
-                        />
+                        <Suspense fallback={<Spinner />}>
+                            <LazyProyecto
+                                titulo="Impresión 3D"
+                                descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                                img={Impresion3D}
+                            />
+                        </Suspense>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Proyecto
-                            titulo="Museo Nacional de Sicán"
-                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
-                            img={MuseoSican}
-                        />
+                        <Suspense fallback={<Spinner />}>
+                            <LazyProyecto
+                                titulo="Museo Nacional de Sicán"
+                                descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                                img={MuseoSican}
+                            />
+                        </Suspense>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Proyecto 
-                            titulo="Banister"
-                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
-                            img={Banister} 
-                        />
+                        <Suspense fallback={<Spinner />}>
+                            <LazyProyecto 
+                                titulo="Banister"
+                                descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                                img={Banister} 
+                            />
+                        </Suspense>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Proyecto
-                            titulo="Casa de Campo"
-                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
-                            img={CasaDeCampo} 
-                        />
+                        <Suspense fallback={<Spinner />}>
+                            <LazyProyecto
+                                titulo="Casa de Campo"
+                                descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                                img={CasaDeCampo} 
+                            />
+                        </Suspense>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Proyecto
-                            titulo="Huanchaco"
-                            descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
-                            img={Huanchaco} 
-                        />
+                        <Suspense fallback={<Spinner />}>
+                            <LazyProyecto
+                                titulo="Huanchaco"
+                                descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                                img={Huanchaco} 
+                            />
+                        </Suspense>
                     </SwiperSlide>
                 </Swiper>
             </div>
