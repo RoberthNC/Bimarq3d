@@ -14,7 +14,7 @@ const AppBimarq3d = () => {
 
     return (
         <>
-            { <Ok /> }
+            { mostrarModal && <Ok /> }
             <QuienesSomos />
             <Proyectos />
             <Servicios />
