@@ -12,6 +12,7 @@ import MuseoSican from "../assets/img/museosican.png"
 import Banister from "../assets/img/banister.png"
 import CasaDeCampo from "../assets/img/casacampo.png"
 import Huanchaco from "../assets/img/huanchaco.jpg"
+import RosellPiazzini from "../assets/img/rosellpiazzini.png"
 
 SwiperCore.use([Navigation, Pagination])
 
@@ -71,6 +72,15 @@ const Proyectos = () => {
                                 titulo="Huanchaco"
                                 descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
                                 img={Huanchaco} 
+                            />
+                        </Suspense>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Suspense fallback={<Spinner />}>
+                            <LazyProyecto
+                                titulo="Rosell Piazzini"
+                                descripcion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!"
+                                img={RosellPiazzini} 
                             />
                         </Suspense>
                     </SwiperSlide>
