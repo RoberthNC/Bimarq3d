@@ -1,5 +1,6 @@
 import Comercial from "../assets/img/comercial.jpg"
 import Habitacional from "../assets/img/habitacional.jpg"
+import Industrial from "../assets/img/industrial.jpg"
 
 const servicios = [
     {
@@ -15,7 +16,7 @@ const servicios = [
     {
         titulo:"Vista Técnica Industrial",
         descripcion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error voluptas corrupti sunt iste. Voluptates accusantium eos consequuntur error et inventore nostrum assumenda voluptatibus, praesentium neque soluta cum. Laboriosam, veritatis!",
-        img:""
+        img:Industrial
     }
 ]
 
